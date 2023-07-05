@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+<!-- cada tag semântica representa uma sessão do site -->
+
+	<section>
+
+<!-- o nav é todo o menu de navegação do site -->
+		<nav class="container">
+			<div class="elemento">
+			<a id="bt-logo" href="#">CHEF RÁPIDO</a>
+			</div>
+			<div class="elemento">
+			<a id="bt-duvidas" href="#">DÚVIDAS/CONTATOS</a>
+			</div>
+		</nav>			
+
+<!--os 2 headers são a sessão de apresentação do nosso site, onde se encontra o texto inicial e o tablet com a imagem -->
+		<header>
+				<img id="texto1" src="img/texto1.png">
+		</header>
+		<header id="pt2">
+				<img id="tablet" src="img/tablet.png">
+				
+				<div id="container1">
+					<img id="traco1" src="img/traco1.png">
+				</div>
+		</header>
+
+
+<!--O main é a sessão de restaurantes, na qual se encontra a parte principal do site -->
+		<main>
+			<h2 id="txt-restaurantes">RESTAURANTES</h2>
+				<div class="container-restaurantes">
+					<div class="card">
+						<img class="img-FamiliaRicartes" src="img/restaurante1.png"/>
+						<div class="texto-card">
+							<h3 class="titulo-restaurantes">Família Ricartes Gourmet</h3>
+						</div>
+					</div>
+
+					<div class="card">
+						<img class="img-TopAcai" src="img/restaurante2.png"/>
+						<div class="texto-card">
+							<h3 class="titulo-restaurantes">Top Açaí</h3>
+						</div>
+					</div>
+		</main>
+
+<!--A section é a parte de cadastramento de novos restaurantes -->
+		<section id="cadastre-se">
+			<img id="traco3" src="img/traco3.png">	
+			<div class="container-4">		
+				<div id="item1">
+					<h1>Junte-se ao <span style="color: #FF9500 ;">CHEF RÁPIDO</span></h1>
+				</div>
+				<div id="item2">
+					<p id="txt-cadastre-se">Venha fazer parte do nosso time e padronize os pedidos do seu empreendimento!</p>
+				</div>
+				<div id="item3">
+						<form name="" method="" action="">
+
+							<label for="EMPRESA">Empresa:</label>
+							<input id="EMPRESA" type="text" name="EMPRESA" placeholder="" /><br/>
+
+
+							<label for="nome">Nome Completo:</label>
+							<input id="nome" type="text" name="nome" placeholder="" /><br/>
+
+							<label for="TELEFONE">Telefone:</label>
+							<input id="TELEFONE" type="tel" name="TELEFONE" placeholder=""/ pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+
+							<label for="email">E-mail:</label>
+							<input id="email" type="email" name="email" placeholder="" />
+
+							<label id="aviso-form">PREENCHA TODOS OS CAMPOS</label>
+
+							<input id="bt-enviar" type="submit" name="bt-enviar" value="ENVIAR" />
+      					</form>
+      				<div id="botao-topo">
+      					<p id="txt-botao-topo">TOPO</p>
+      				</div>
+				</div>
+			</div>
+
+
+		</section>
+	
+
+
+<!--O footer é o rodapé do site -->
+		<footer>
+			<p id="txt-footer">Desenvolvido por Vinicius Henrique,Renato Borges e Arthur Camargos - 2023</p>
+		</footer>
+
+	</section>
+
+
+</body>
+</html>
+

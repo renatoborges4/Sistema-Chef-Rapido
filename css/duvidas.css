@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Merriweather:wght@300;700&family=Roboto:wght@400;500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: black;
+	margin: 0;
+}
+
+section{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 10vh 90vh 100vh 170vh 10vh ;
+}
+
+/*inicio barra de navegação */
+nav{
+	padding: 20px !important;
+  }
+
+.bt-duvidas{
+	font-size: roboto;
+	font-size: 25px;
+	color: #FF9500;
+  }
+
+.bt-logo{
+	font-family: Glass-antiqua;
+	color: #FF9500;
+	font-size: 40px;
+  }
+
+  .microempreendedor{
+	background-color: #000;
+
+}
+
+
+.elemento{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+#bt-logo{
+	font-family: Glass-antiqua;
+	color: #FF9500;
+	font-size: 40px;
+}
+
+#bt-duvidas{
+	font-size: roboto;
+	font-size: 25px;
+	color: #FF9500;
+}
+
+/*final barra de navegação */
+
+header{
+	background-color: grey;
+	grid-column: 1/2;
+}
+
+#container-img-inicial{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+
+
+#img-garcom{
+	height: 70%;
+
+}
+
+#pt2{
+	background-color: #252323;
+	grid-column: 2/3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		box-sizing: border-box;
+}
+
+#container-txt1{
+	width: 300px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 160px;
+		box-sizing: border-box;
+
+}
+
+#titulo-pt2{
+	text-align: center;
+	font-family: roboto;
+	font-size: 30px;
+	color: #FFFFFF;
+		box-sizing: border-box;
+}
+
+.duvidas{
+	background-color: #FF9500;
+	padding: 20px;
+	text-align: center;
+}
+
+.duvidas2{
+	background-color: #000;
+	padding: 20px;
+	text-align: center;
+}
+
+.duvidas h2 {
+	color: #000;
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.duvidas .col-md-6 {
+	margin-bottom: 20px;
+}
+
+.duvidas .card-rest {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.duvidas p {
+	color: #000;
+	font-size: 16px;
+}
+
+footer{
+	background-color: #000;
+	grid-column: 1/3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer{
+	color:#FF9500;
+	text-align: center;
+	font-family: roboto;
+	padding: 20px 0;
+	text-align: center;
+
+}
+
+.texto2 {
+	background-color: white;
+	border-radius: 50px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.microempreendedor {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .column {
+	flex: 1;
+	min-width: 0;
+  }
+  
+  .col1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .col2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+  
+  @media screen and (max-width: 768px) {
+	.column {
+	  flex-basis: 100%;
+	  padding: 10px;
+	}
+  }
+  
