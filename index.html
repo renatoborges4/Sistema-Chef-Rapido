@@ -3,106 +3,102 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Index</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Chef Rapido</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style_index_chef_rapido.css">
+	<link rel="stylesheet" type="text/css" href="css/button_scrolltotop.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-<!-- cada tag semântica representa uma sessão do site -->
-
-	<section>
-
-<!-- o nav é todo o menu de navegação do site -->
-		<nav class="container">
-			<div class="elemento">
-			<a id="bt-logo" href="#">CHEF RÁPIDO</a>
-			</div>
-			<div class="elemento">
-			<a id="bt-duvidas" href="#">DÚVIDAS/CONTATOS</a>
-			</div>
-		</nav>			
-
-<!--os 2 headers são a sessão de apresentação do nosso site, onde se encontra o texto inicial e o tablet com a imagem -->
-		<header>
-				<img id="texto1" src="img/texto1.png">
-		</header>
-		<header id="pt2">
-				<img id="tablet" src="img/tablet.png">
-				
-				<div id="container1">
-					<img id="traco1" src="img/traco1.png">
+	<nav class="navbar navbar-expand-lg navbar-black bg-black" >
+		<a class="bt-logo" href="index.html"><u>CHEF RÁPIDO</u></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="ms-auto">
+				<li class="nav-item">
+					<a class="bt-duvidas" href="duvidas.html" style="font-family: Glass-antiqua;"><u>DÚVIDAS/CONTATOS</u></a>
+				</li>
+			</ul>
+		</div>
+	</nav>	
+	<main>
+		<div class="texto1">
+			<div class="row">
+				<div class="col-md-6 d-flex justify-content-center align-items-center">
+					<img id="texto1" src="img/texto1.png" class="img-fluid">
 				</div>
-		</header>
-
-
-<!--O main é a sessão de restaurantes, na qual se encontra a parte principal do site -->
-		<main>
-			<h2 id="txt-restaurantes">RESTAURANTES</h2>
-				<div class="container-restaurantes">
-					<div class="card">
-						<img class="img-FamiliaRicartes" src="img/restaurante1.png"/>
-						<div class="texto-card">
-							<h3 class="titulo-restaurantes">Família Ricartes Gourmet</h3>
-						</div>
+				<div class="col-md-6 d-flex justify-content-center align-items-center">
+					<img id="tablet" src="img/tablet.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div class="restaurantes">
+			<h2>RESTAURANTES</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="pagina_familia_Ricartes_Gourmet.html">
+						<img class="card-rest img-fluid" src="img/restaurante1.png">
+						<a href="pagina_familia_Ricartes_Gourmet.html" class="text-decoration-none">
+							<p>Família Ricartes</p>
+						</a>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="pagina_Top_Acai.html">
+						<img class="card-rest img-fluid" src="img/restaurante2.png">
+						<a href="pagina_Top_Acai.html" class="text-decoration-none">
+							<p>Top Açaí</p>
+						</a>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="junte-se">
+			<div class="text-white">
+				<div>
+					<div>
+						<h1>Junte-se ao <span style="color: #FF9500;">CHEF RÁPIDO</span></h1>
 					</div>
-
-					<div class="card">
-						<img class="img-TopAcai" src="img/restaurante2.png"/>
-						<div class="texto-card">
-							<h3 class="titulo-restaurantes">Top Açaí</h3>
-						</div>
+					<div >
+						<p id="txt-cadastre-se">Venha fazer parte do nosso time e padronize os pedidos do seu empreendimento!</p>
 					</div>
-		</main>
-
-<!--A section é a parte de cadastramento de novos restaurantes -->
-		<section id="cadastre-se">
-			<img id="traco3" src="img/traco3.png">	
-			<div class="container-4">		
-				<div id="item1">
-					<h1>Junte-se ao <span style="color: #FF9500 ;">CHEF RÁPIDO</span></h1>
 				</div>
-				<div id="item2">
-					<p id="txt-cadastre-se">Venha fazer parte do nosso time e padronize os pedidos do seu empreendimento!</p>
-				</div>
-				<div id="item3">
-						<form name="" method="" action="">
-
-							<label for="EMPRESA">Empresa:</label>
-							<input id="EMPRESA" type="text" name="EMPRESA" placeholder="" /><br/>
-
-
-							<label for="nome">Nome Completo:</label>
-							<input id="nome" type="text" name="nome" placeholder="" /><br/>
-
-							<label for="TELEFONE">Telefone:</label>
-							<input id="TELEFONE" type="tel" name="TELEFONE" placeholder=""/ pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
-
-							<label for="email">E-mail:</label>
-							<input id="email" type="email" name="email" placeholder="" />
-
-							<label id="aviso-form">PREENCHA TODOS OS CAMPOS</label>
-
-							<input id="bt-enviar" type="submit" name="bt-enviar" value="ENVIAR" />
-      					</form>
-      				<div id="botao-topo">
-      					<p id="txt-botao-topo">TOPO</p>
-      				</div>
+				<div>
+					<div class="d-flex align-items-center justify-content-center formcad">
+						<form name="" method="" action="Entrar-Em-Contato.html">
+							<div class="mb-3">
+								<label for="EMPRESA" class="form-label">EMPRESA</label>
+								<input id="EMPRESA" type="text" name="EMPRESA" class="form-control" placeholder="">
+							</div>
+							<div class="mb-3">
+								<label for="nome" class="form-label">NOME COMPLETO</label>
+								<input id="nome" type="text" name="nome" class="form-control" placeholder="">
+							</div>
+							<div class="mb-3">
+								<label for="TELEFONE" class="form-label">TELEFONE</label>
+								<input id="TELEFONE" type="tel" name="TELEFONE" class="form-control" placeholder="" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">E-MAIL</label>
+								<input id="email" type="email" name="email" class="form-control" placeholder="">
+							</div>
+							<button type="submit" style="background-color: #FF9500; margin-top: 40px; margin-left: 50px; font-family: roboto; font-weight: 500; font-size: 20PX;" class="btn btn-default text-black w-75">ENVIAR</button>
+						</form>
+						
+					</div>
+					<div class="d-flex justify-content-end">
+						<a href="#" style="text-decoration: none;"><button class="btn btn-topo" href="#"><b>TOPO</b></button></a>
+					</div>
+					
 				</div>
 			</div>
-
-
-		</section>
-	
-
-
-<!--O footer é o rodapé do site -->
-		<footer>
-			<p id="txt-footer">Desenvolvido por Vinicius Henrique,Renato Borges e Arthur Camargos - 2023</p>
-		</footer>
-
-	</section>
-
-
+		</div>
+	</main>
+	<footer id="footer">
+		<p> Desenvolvido por Vinicius Henrique, Renato Borges e Arthur Camargos - 2023</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

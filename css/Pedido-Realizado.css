@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Merriweather:wght@300;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@400;500&display=swap');
 
 *{
 	margin: 0;
@@ -23,6 +23,12 @@ nav{
   margin-right: 25px;
 }
 
+.whitetext{
+	font-family: merriweather;
+	font-size: 60px;
+	font-weight: 700;
+	color: #FFF;
+}
 
 .bt-logo{
   font-family: Glass-antiqua;
@@ -44,6 +50,7 @@ header{
 	grid-column: 1/2;
 	display: flex;
 	justify-content: center;
+	
 }
 
 
@@ -73,9 +80,6 @@ header{
 
 h2{
 	font-family: merriweather;
-	font-weight: 700;
-	margin-top: 50px;
-
 }
 
 /*O CONTAINER COM TODAS AS IMAGENS DOS RESTAURANTES*/
@@ -110,6 +114,10 @@ img{}
 }
 
 
+#txt-pizza-ze{
+	margin-left: 350px ;
+
+}
 
 #cadastre-se{
 	background-color:#141414;
@@ -153,9 +161,6 @@ H1{
 	font-size: 50px;
 }
 
-
-
-
 #txt-cadastre-se{
 	font-family: roboto;
 	font-size: 35px;
@@ -168,12 +173,13 @@ form{
 }
 
 label{
-		margin-left: -150px;
-		font-size: 23PX;
-		font-family: roboto;
+	margin-left: -100px;
+	font-size: 23PX;
+	font-family: roboto;
 }
 
 input{
+	width: 150%;
 	height: 35px;
 	margin-bottom: 10px;
 	padding-left: 5px;
@@ -181,9 +187,8 @@ input{
 	border-radius: 5px 5px 5px 5px;
 	font-family: Inter, sans-serif ;
 	font-size: 0.8rem;	
-	margin-left: -150px;
+	margin-left: -100px;
 	box-sizing: border-box;
-
 }
 
 
@@ -198,18 +203,18 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 #footer{
-	font-family: roboto;
-	font-weight: 400;
-	font-size: 1.6em;
-	color:#FF9500;
+  font-family: roboto;
+  font-weight: 400; 
+  font-size: 1.6em;
+  color:#FF9500;
+
 }
 
 .restaurantes{
-	background-color: #FF9500;
+	background-color: #141414;
 	padding: 20px;
 	text-align: center;
 }
@@ -223,30 +228,28 @@ footer{
 }
 
 .restaurantes .col-md-6 {
-	margin-bottom: 150px;
+	margin-bottom: 20px;
 }
 
 .restaurantes .card-rest {
 	width: 100%;
 	max-width: 300px;
 	margin: 0 auto;
-	margin-top: 50px;
 }
 
 .restaurantes p {
 	color: #000;
-	font-size: 20px; 	
-	font-family: roboto;
-	font-weight: 500;
+	font-size: 16px; 	
 }
 
 .texto1 {
 	background-color: #141414;
+	/* background-color: #000; */
 	padding: 20px;
   }
 
 .imagem-predefinida {
-    width: 800px; 
+    width: 300px; 
     height: auto; 
 }
 
@@ -269,16 +272,12 @@ footer{
 	margin-bottom: 30px;
 }
 
-.mb-3{
-	width: 500px;
-
-}
 
 .junte-se {
 	background-image: url("../img/traco3.png");
 	padding: 30px;
-	background-color: #141414;
 }
+
 
 
 .formcad{
@@ -290,9 +289,10 @@ footer{
 	color: #000;
     z-index: 9999;
 	border-radius:45%;
-	margin-top: 30px;
+
 }
 
 .btn-topo:hover {
 	color: white !important;
 }
+

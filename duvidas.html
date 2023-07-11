@@ -4,105 +4,100 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Duvidas/Contatos</title>
-	<link rel="stylesheet" type="text/css" href="duvidas.css">
+	<link rel="stylesheet" type="text/css"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/duvidas.css">
+	<link rel="stylesheet" type="text/css" href="css/button_scrolltotop.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<section>
-<!-- o nav é todo o menu de navegação do site -->
-		<nav class="container">
-			<div class="elemento">
-			<a id="bt-logo" href="#">CHEF RÁPIDO</a>
-			</div>
-		</nav>	
-
-<!--os 2 headers são a imagem do garcom e a cliente, e outro é o texto -->
-		<header id="container-img-inicial">
-				<img id="img-garcom" src="img/garcom.png">
-		</header>
-		<header id="pt2"> 
-			<div id="container-txt1">
-				<h1 id="titulo-pt2">OLÁ, MICROEMPREENDEDOR</h1>
-			</div>
-			<div id="container-txt2">
-				<p id="txt-pt2">Precisa de ajuda? Aqui você encontra as respostas para as principais dúvidas que meus parceiros costumam ter.</p>
-			</div>
-		</header>
-
-		<main>
-			<div class="container-duvidas">
-				<h1 id="DUVIDAS-FREQUENTES">DÚVIDAS FREQUENTES</H1>
-				<div id="sub-container-duvidas">
-					<p class="txt-duvidas">Como é o processo para que o meu estabelecimento seja parceiro do Chefe Rápido?</p>
-					<div id="container-resp-duvida1">
-						<p id="txt-resp-duvida1">Tudo começa pelo cadastro da sua empresa no site. Em seguida, entro em contato para apresentar a proposta e você responde a um formulário. Então, é marcado um horário para que um dos meus colaboradores instale o sistema no seu computador. E pronto! </p>
-					</div>
-
-					<p class="txt-duvidas">Quanto custa para ser parceiro?</p>
-					<div id="container-resp-duvida2">
-						<p id="txt-resp-duvida2">O sistema é gratuito, nosso objetivo é ajudar microempreendedores.</p>
-					</div>							
-
+	<nav class="navbar navbar-expand-lg navbar-black bg-black" >
+		<a class="bt-logo" href="index.html"><u>CHEF RÁPIDO</u></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="ms-auto">
+				<li class="nav-item">
+					<a class="bt-duvidas" href="duvidas.html" style="font-family: Glass-antiqua;"><u>DÚVIDAS/CONTATOS</u></a>
+				</li>
+			</ul>
+		</div>
+	</nav>	
+	<main>
+		<div class="microempreendedor">
+			<div class="column">
+				<div class="col1">
+					<img id="img-garcom" src="img/garcom.png" style="width: 50%;">
 				</div>
 			</div>
-		</main>
-
-
-		<main id="main-pt2">
-			<div class="container-duvidas">
-				<div id="sub-container-duvidas2">
-					<p class="txt-duvidas">Meu pedido pode ser entregue?</p>
-					<div id="container-resp-duvida1">
-						<p id="txt-resp-duvida1">Cada loja é responsável por realizar a entrega ou não, caso haja essa possibilidade estará disponível essa opção antes de finalizar o pedido. </p>
+			<div class="column">
+				<div class="col2">
+					<div>
+						<h1 id="titulo-pt2">OLÁ, MICROEMPREENDEDOR</h1>
+						<p class="text-white">Precisa de ajuda? Aqui você encontra as respostas para as <br>principais dúvidas que meus parceiros costumam ter.</p>
 					</div>
-
-					<p class="txt-duvida-diferente">Caso possua outra dúvida só nos informar seus dados que entraremos em contato:</p>
-				<div id="item3">
-						<form name="" method="" action="">
-
-							<label for="NOME">Nome:</label>
-							<input id="NOME" type="text" name="NOME" placeholder="" /><br/>
-
-
-							<label for="TELEFONE">Telefone:</label>
-							<input id="TELEFONE" type="tel" name="TELEFONE" placeholder="" /><br/>
-
-							<label for="email">E-mail:</label>
-							<input id="email" type="email" name="email" placeholder="" />
-
-							<label for="DUVIDA">Dúvida:</label>
-							<input id="DUVIDA" type="email" name="email" placeholder="" />							
-
-
-							<div id="container-botoes">
-							<input id="bt-cancelar" type="bt-cancelar" type="submit" name="bt-cancelar" value="CANCELAR">
-							<input id="bt-enviar" type="submit" name="bt-enviar" value="ENVIAR" />
-							</div>
-
-
-      					</form>
-      			</div>
-
-
-     				<div id="botao-topo">
-      					<p id="txt-botao-topo">TOPO</p>
-      				</div>
-
-		</main>
-
-
-		<footer>
-			<p id="txt-footer">Desenvolvido por Vinicius Henrique,Renato Borges e Arthur Camargos - 2023</p>
+				</div>
+			</div>
+		</div>		
+		<div class="duvidas">
+			<h2>Dúvidas Frequentes</h2>
+			<div>
+				<div>
+					<p>Como é o processo para que o meu estabelecimento seja parceiro do Chefe Rápido?</p>
+					<p class="texto2">Tudo começa pelo cadastro da sua empresa no site. <br>Em seguida, entro em contato para apresentar a proposta e você responde a um formulário. <br>Então, é marcado um horário para que um dos meus colaboradores instale o sistema no seu computador. <br>E pronto!</p>
+				</div>
+				<div>
+					<p>Quanto custa para ser parceiro?</p>
+					<p class="texto2">O sistema é gratuito, nosso objetivo é ajudar microempreendedores.</p>
+				</div>
+			</div>
+		</div>
+		<div class="duvidas2">
+			<div>
+				<p><font color="white">Meu pedido pode ser entregue?</font></p>
+				<p class="texto2">Cada loja é responsável por realizar a entrega ou não, <br>caso haja essa possibilidade estará disponível essa opção antes de finalizar o pedido.</p>
+			</div>
+			<div class="text-white">
+				<div>
+					<div>
+						<p>Caso possua outra dúvida, só nos informar seus dados que entraremos em contato:</p>
+					</div>
+				</div>
+				<div>
+					<div class="d-flex align-items-center justify-content-center formcad">
+						<form name="" method="" action="Entrar-Em-Contato.html">
+								<div class="mb-3">
+									<label for="nome" class="form-label">NOME COMPLETO</label>
+									<input id="nome" type="text" name="nome" class="form-control" placeholder="">
+								</div>
+								<div class="mb-3">
+									<label for="TELEFONE" class="form-label">TELEFONE</label>
+									<input id="TELEFONE" type="tel" name="TELEFONE" class="form-control" placeholder="" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+								</div>
+								<div class="mb-3">
+									<label for="email" class="form-label">E-MAIL</label>
+									<input id="email" type="email" name="email" class="form-control" placeholder="">
+								</div>
+								<div class="mb-3">
+									<label for="EMPRESA" class="form-label">EMPRESA</label>
+									<textarea id="EMPRESA" name="EMPRESA" class="form-control" placeholder=""></textarea>
+								</div>
+								<button type="submit" style="background-color: #FF9500; margin-top: 40px; margin-left: 50px; font-family: roboto; font-weight: 500; font-size: 20PX; margin-left: 125px; " class="btn btn-default text-black w-75">ENVIAR</button>
+							</form>
+							
+					</div>
+					<div class="d-flex justify-content-end">
+						<a href="#" style="text-decoration: none;"><button class="btn btn-topo" href="#"><b>TOPO</b></button></a>
+					</div>
+				</div>
+		</div>
+		</div>
+		<footer id="footer">
+			<p> Desenvolvido por Vinicius Henrique, Renato Borges e Arthur Camargos - 2023</p>
 		</footer>
-
-	</section>
-
-
+	</main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
-
-
-
-
-
-
